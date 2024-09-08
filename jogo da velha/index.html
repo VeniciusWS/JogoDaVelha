@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" type= "text/css" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <img id="logo" src="velha.png" width="200">
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <div id="main">
+        <br><br><br>
+        <table class="centralizado">
+            <tr>
+                <td id="c00" onclick="play(0,0)"></td>
+                <td id="c10" onclick="play(1,0)" class="center"></td>
+                <td id="c20" onclick="play(2,0)"></td>
+            </tr>
+            <tr>
+                <td id="c01" onclick="play(0,1)" class="middle"></td>
+                <td id="c11" onclick="play(1,1)" class="middle center"></td>
+                <td id="c21" onclick="play(2,1)" class="middle"></td>
+            </tr>
+            <tr>
+                <td id="c02" onclick="play(0,2)"></td>
+                <td id="c12" onclick="play(1,2)" class="center"></td>
+                <td id="c22" onclick="play(2,2)"></td>
+            </tr>
+        </table>
+        <h2 id="mensagem" class="centralizado">Jogador X</h2>
+            <button id="reset" class="centralizado" onclick="reset()">Reset</button>        
+        </div>
+        
+    
+</body>
+</html>
